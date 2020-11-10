@@ -1,0 +1,6 @@
+{% for content in data %}
+<div id="{{ content.id }}" class="border" onclick="delete_comment('{{ content.id }}')">
+    {{ content.comment }}
+</div>
+{% endfor %}
+
